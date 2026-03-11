@@ -11,7 +11,7 @@ class EcosystemModel(mesa.Model):
         self,
         width=20,
         height=20,
-        initial_rabbits=10,
+        initial_rabbits=2,
         grass_regrowth_time=5,
         energy_from_grass=5,
         reproduction_threshold=20,
