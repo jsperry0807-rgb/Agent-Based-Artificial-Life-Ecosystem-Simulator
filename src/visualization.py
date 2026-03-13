@@ -1,6 +1,8 @@
 from mesa.visualization import SolaraViz, make_space_component, make_plot_component
 from mesa.visualization.components import AgentPortrayalStyle
-from .agents import Grass, Rabbit, Fox
+from .agents.grass import Grass
+from .agents.rabbit import Rabbit
+from .agents.fox import Fox
 from .model import EcosystemModel
 
 
@@ -33,7 +35,7 @@ def agent_portrayal(agent):
             marker="^",  # triangle
             size=100,
         )
-    
+
     return AgentPortrayalStyle(color="gray", marker="x", size=50)
 
 
@@ -46,7 +48,7 @@ def create_viz(model=None):
         make_plot_component("Rabbit Population", page=0),
         make_plot_component("Fox Population", page=1),
     ]
-    
+
     page = SolaraViz(
         model, components=components, name="Artificial Life Ecosystem Simulator"
     )

@@ -1,5 +1,8 @@
 import mesa
-from .agents import Grass, Rabbit, Fox
+from .agents.grass import Grass
+from .agents.rabbit import Rabbit
+from .agents.fox import Fox
+
 
 class EcosystemModel(mesa.Model):
     """Main model: contains grid, agents, and step logic with aging."""
