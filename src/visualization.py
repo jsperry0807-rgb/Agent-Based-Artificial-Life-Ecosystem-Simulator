@@ -45,8 +45,8 @@ def create_viz(model=None):
 
     components = [
         make_space_component(agent_portrayal),
-        make_plot_component("Rabbit Population", page=0),
-        make_plot_component("Fox Population", page=1),
+        make_plot_component("Rabbit Population", page=1),
+        make_plot_component("Fox Population", page=2),
     ]
 
     page = SolaraViz(

@@ -1,5 +1,5 @@
 import mesa
-from rabbit import Rabbit
+from .rabbit import Rabbit
 
 # ------------------------------
 # Fox Agent (Carnivore)
