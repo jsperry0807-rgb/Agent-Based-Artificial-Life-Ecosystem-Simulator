@@ -1,0 +1,6 @@
+mesa-geo
+mesa[rec]
+geopandas
+shapely
+solara
+rasterio
